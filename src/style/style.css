@@ -1,14 +1,41 @@
+.desktop-menu {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
 /* ---------------------------------------------Navbar--------------------------------------------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  /* background-color: #1b1a2ea9; */
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171);
 }
 
 .navbar {
-  position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
-  /* padding: 0.3rem 2rem !important; */
-  font-size: 1.2rem !important;
+  position: fixed;
+  transition: all 0.3s ease-out 0s;
+}
+
+.ant-menu-item,
+.ant-menu-item-icon svg {
+  font-size: 18px;
+  color: white;
+}
+
+.ant-dropdown-open {
+  width: 50vw;
+  color: white;
 }
